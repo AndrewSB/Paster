@@ -12,20 +12,24 @@
 	<dict>
 		<key>7B59EC6316C038E7B8444B0ABF802B736C8BB5A8</key>
 		<string>https://github.com/AndrewSB/One.git</string>
+		<key>DF614BBC4B5ED2E2EEB15656ABDBEAB78F241B5A</key>
+		<string>https://github.com/AndrewSB/Paster.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Paster/Paster.xcodeproj</string>
+	<string>Paster.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>7B59EC6316C038E7B8444B0ABF802B736C8BB5A8</key>
-		<string>../../..</string>
+		<string>../../../One</string>
+		<key>DF614BBC4B5ED2E2EEB15656ABDBEAB78F241B5A</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/AndrewSB/One.git</string>
+	<string>https://github.com/AndrewSB/Paster.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>7B59EC6316C038E7B8444B0ABF802B736C8BB5A8</string>
+	<string>DF614BBC4B5ED2E2EEB15656ABDBEAB78F241B5A</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -35,6 +39,14 @@
 			<string>7B59EC6316C038E7B8444B0ABF802B736C8BB5A8</string>
 			<key>IDESourceControlWCCName</key>
 			<string>One</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DF614BBC4B5ED2E2EEB15656ABDBEAB78F241B5A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Paster</string>
 		</dict>
 	</array>
 </dict>
