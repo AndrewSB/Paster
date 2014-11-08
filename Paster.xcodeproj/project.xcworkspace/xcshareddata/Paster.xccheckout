@@ -14,11 +14,11 @@
 		<string>https://github.com/AndrewSB/Paster.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>iOS/Paster.xcodeproj</string>
+	<string>Paster.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>DF614BBC4B5ED2E2EEB15656ABDBEAB78F241B5A</key>
-		<string>../../..</string>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/AndrewSB/Paster.git</string>

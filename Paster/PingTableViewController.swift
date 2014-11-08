@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import Foundation
 
 class PingTableViewController: UITableViewController, UITableViewDataSource, UITableViewDelegate {
-
+    
+    let dataArray = ["first item", "short item", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur, purus ac semper varius, turpis odio vestibulum massa, in maximus est lectus sed est. Praesent et dolor vulputate, venenatis neque at"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -39,15 +42,17 @@ class PingTableViewController: UITableViewController, UITableViewDataSource, UIT
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return 4
+        return dataArray.count + 1
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("reuseID", forIndexPath: indexPath) as UITableViewCell
         
         if indexPath.row == 0 {cell.textLabel.text = "title"}
-        else {cell.textLabel.text = "lol"}
-        println(indexPath.row)
+        else {cell.textLabel.text = dataArray[indexPath.row - 1]}
+        
+        cell.textLabel.numberOfLines = 0
+        
         return cell
     }
 
