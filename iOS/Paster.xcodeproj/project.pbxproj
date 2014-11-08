@@ -8,10 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		4659FB4B19A0EF08003703E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4659FB4A19A0EF08003703E6 /* AppDelegate.swift */; };
-		4659FB4D19A0EF08003703E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4659FB4C19A0EF08003703E6 /* ViewController.swift */; };
 		4659FB5019A0EF08003703E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4659FB4E19A0EF08003703E6 /* Main.storyboard */; };
 		4659FB5219A0EF08003703E6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4659FB5119A0EF08003703E6 /* Images.xcassets */; };
 		4659FB5E19A0EF08003703E6 /* PasterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4659FB5D19A0EF08003703E6 /* PasterTests.swift */; };
+		46B265A01A086BD700144F80 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46B2659F1A086BD700144F80 /* NotificationCenter.framework */; };
+		46B265A51A086BD700144F80 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B265A41A086BD700144F80 /* TodayViewController.swift */; };
+		46B265A71A086BD700144F80 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46B265A61A086BD700144F80 /* MainInterface.storyboard */; };
+		46B265AA1A086BD700144F80 /* PasterWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 46B2659D1A086BD700144F80 /* PasterWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		46BF99D01A0E1B9E0000B832 /* PingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BF99CF1A0E1B9E0000B832 /* PingTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,18 +26,44 @@
 			remoteGlobalIDString = 4659FB4419A0EF08003703E6;
 			remoteInfo = Paster;
 		};
+		46B265A81A086BD700144F80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4659FB3D19A0EF08003703E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46B2659C1A086BD700144F80;
+			remoteInfo = PasterWidget;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		46B265AE1A086BD700144F80 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				46B265AA1A086BD700144F80 /* PasterWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4659FB4519A0EF08003703E6 /* Paster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Paster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4659FB4919A0EF08003703E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4659FB4A19A0EF08003703E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4659FB4C19A0EF08003703E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4659FB4F19A0EF08003703E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4659FB5119A0EF08003703E6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4659FB5719A0EF08003703E6 /* PasterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PasterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4659FB5C19A0EF08003703E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4659FB5D19A0EF08003703E6 /* PasterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasterTests.swift; sourceTree = "<group>"; };
+		46B2659D1A086BD700144F80 /* PasterWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PasterWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		46B2659F1A086BD700144F80 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		46B265A31A086BD700144F80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46B265A41A086BD700144F80 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		46B265A61A086BD700144F80 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		46BF99CF1A0E1B9E0000B832 /* PingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PingTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +81,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		46B2659A1A086BD700144F80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46B265A01A086BD700144F80 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -59,6 +97,8 @@
 			children = (
 				4659FB4719A0EF08003703E6 /* Paster */,
 				4659FB5A19A0EF08003703E6 /* PasterTests */,
+				46B265A11A086BD700144F80 /* PasterWidget */,
+				46B2659E1A086BD700144F80 /* Frameworks */,
 				4659FB4619A0EF08003703E6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,6 +108,7 @@
 			children = (
 				4659FB4519A0EF08003703E6 /* Paster.app */,
 				4659FB5719A0EF08003703E6 /* PasterTests.xctest */,
+				46B2659D1A086BD700144F80 /* PasterWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,7 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				4659FB4A19A0EF08003703E6 /* AppDelegate.swift */,
-				4659FB4C19A0EF08003703E6 /* ViewController.swift */,
+				46BF99CF1A0E1B9E0000B832 /* PingTableViewController.swift */,
 				4659FB4E19A0EF08003703E6 /* Main.storyboard */,
 				4659FB5119A0EF08003703E6 /* Images.xcassets */,
 				4659FB4819A0EF08003703E6 /* Supporting Files */,
@@ -109,6 +150,32 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		46B2659E1A086BD700144F80 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46B2659F1A086BD700144F80 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		46B265A11A086BD700144F80 /* PasterWidget */ = {
+			isa = PBXGroup;
+			children = (
+				46B265A41A086BD700144F80 /* TodayViewController.swift */,
+				46B265A61A086BD700144F80 /* MainInterface.storyboard */,
+				46B265A21A086BD700144F80 /* Supporting Files */,
+			);
+			path = PasterWidget;
+			sourceTree = "<group>";
+		};
+		46B265A21A086BD700144F80 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				46B265A31A086BD700144F80 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,10 +186,12 @@
 				4659FB4119A0EF08003703E6 /* Sources */,
 				4659FB4219A0EF08003703E6 /* Frameworks */,
 				4659FB4319A0EF08003703E6 /* Resources */,
+				46B265AE1A086BD700144F80 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				46B265A91A086BD700144F80 /* PBXTargetDependency */,
 			);
 			name = Paster;
 			productName = Paster;
@@ -147,6 +216,23 @@
 			productReference = 4659FB5719A0EF08003703E6 /* PasterTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		46B2659C1A086BD700144F80 /* PasterWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46B265AD1A086BD700144F80 /* Build configuration list for PBXNativeTarget "PasterWidget" */;
+			buildPhases = (
+				46B265991A086BD700144F80 /* Sources */,
+				46B2659A1A086BD700144F80 /* Frameworks */,
+				46B2659B1A086BD700144F80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PasterWidget;
+			productName = PasterWidget;
+			productReference = 46B2659D1A086BD700144F80 /* PasterWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -158,10 +244,14 @@
 				TargetAttributes = {
 					4659FB4419A0EF08003703E6 = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = JQUR3MJ3GB;
 					};
 					4659FB5619A0EF08003703E6 = {
 						CreatedOnToolsVersion = 6.0;
 						TestTargetID = 4659FB4419A0EF08003703E6;
+					};
+					46B2659C1A086BD700144F80 = {
+						CreatedOnToolsVersion = 6.1;
 					};
 				};
 			};
@@ -180,6 +270,7 @@
 			targets = (
 				4659FB4419A0EF08003703E6 /* Paster */,
 				4659FB5619A0EF08003703E6 /* PasterTests */,
+				46B2659C1A086BD700144F80 /* PasterWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -201,6 +292,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		46B2659B1A086BD700144F80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46B265A71A086BD700144F80 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -208,8 +307,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4659FB4D19A0EF08003703E6 /* ViewController.swift in Sources */,
 				4659FB4B19A0EF08003703E6 /* AppDelegate.swift in Sources */,
+				46BF99D01A0E1B9E0000B832 /* PingTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +320,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		46B265991A086BD700144F80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46B265A51A086BD700144F80 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -228,6 +335,11 @@
 			isa = PBXTargetDependency;
 			target = 4659FB4419A0EF08003703E6 /* Paster */;
 			targetProxy = 4659FB5819A0EF08003703E6 /* PBXContainerItemProxy */;
+		};
+		46B265A91A086BD700144F80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46B2659C1A086BD700144F80 /* PasterWidget */;
+			targetProxy = 46B265A81A086BD700144F80 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -277,7 +389,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -313,7 +425,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -325,10 +437,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Paster/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -337,10 +453,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Paster/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -378,6 +498,32 @@
 			};
 			name = Release;
 		};
+		46B265AB1A086BD700144F80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PasterWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		46B265AC1A086BD700144F80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PasterWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -404,6 +550,15 @@
 			buildConfigurations = (
 				4659FB6519A0EF08003703E6 /* Debug */,
 				4659FB6619A0EF08003703E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46B265AD1A086BD700144F80 /* Build configuration list for PBXNativeTarget "PasterWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46B265AB1A086BD700144F80 /* Debug */,
+				46B265AC1A086BD700144F80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
